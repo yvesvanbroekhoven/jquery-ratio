@@ -1,0 +1,31 @@
+{
+  "name": "ratio",
+  "title": "jQuery ratio",
+  "description": "",
+  "keywords": [],
+  "version": "0.0.0",
+  "author": {
+    "name": "Yves Van Broekhoven",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "Yves Van Broekhoven",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "bugs": "",
+  "homepage": "",
+  "docs": "",
+  "download": "",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}
