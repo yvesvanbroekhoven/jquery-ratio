@@ -6,13 +6,54 @@
 
   <title>ratio demo</title>
 
+  <style>
+    html,
+    body {
+      margin: 0;
+    }
+
+    div.one {
+      background-color: orange;
+      height: 300px;
+      width: 300px;
+    }
+    div.two {
+      background-color: red;
+      width: 50%;
+    }
+  </style>
+
   <script src="http://www.google.com/jsapi?key="></script>
   <script>
     google.load("jquery", "1");
   </script>
-  <script src="ratio-min.js"></script>
+  <script src="jquery-ratio-min.js"></script>
+  <script>
+    $(function(){
+      $('.one').ratio({
+        'side': 'width'
+      });
+
+      $('.two').ratio({
+        'ratio_height': 9,
+        'ratio_width': 21,
+        'recalculate_on_resize': true,
+        'side': 'width'
+      });
+
+      $('.one').on('click', function(){
+        var ratio_instance = $(this).data('jquery_ratio');
+
+        ratio_instance.destroy();
+      });
+
+    });
+  </script>
 </head>
 <body>
+
+  <div class="one"></div>
+  <div class="two"></div>
 
 </body>
 </html>
