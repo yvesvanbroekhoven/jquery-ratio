@@ -4,10 +4,10 @@
  * jquery-ratio
  *
  * Created at: 2013-04-15 14:58:45 +0200
- * Updated at: 2013-04-15 15:09:53 +0200
+ * Updated at: 2013-04-15 15:12:40 +0200
  *
  * Author: Yves Van Broekhoven
- * Version: 0.0.0
+ * Version: 0.0.1
  *
  */
 
