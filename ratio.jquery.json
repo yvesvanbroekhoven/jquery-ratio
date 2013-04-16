@@ -1,12 +1,12 @@
 {
   "name": "ratio",
   "title": "jQuery ratio",
-  "description": "",
-  "keywords": [],
+  "description": "Set the dimensions of a DOM element by ratio",
+  "keywords": ["ratio"],
   "version": "0.0.1",
   "author": {
     "name": "Yves Van Broekhoven",
-    "url": ""
+    "url": "http://yvesvanbroekhoven.be"
   },
   "maintainers": [
     {
@@ -18,13 +18,13 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": ""
+      "url": "https://github.com/yvesvanbroekhoven/jquery-ratio/blob/master/MIT-LICENSE.txt"
     }
   ],
-  "bugs": "",
-  "homepage": "",
-  "docs": "",
-  "download": "",
+  "bugs": "https://github.com/yvesvanbroekhoven/jquery-ratio/issues",
+  "homepage": "https://github.com/yvesvanbroekhoven/jquery-ratio",
+  "docs": "https://github.com/yvesvanbroekhoven/jquery-ratio",
+  "download": "https://github.com/yvesvanbroekhoven/jquery-ratio/tags",
   "dependencies": {
     "jquery": ">=1.5"
   }

@@ -20,12 +20,12 @@
       text-align: center;
     }
 
-    div.one {
+    div#one {
       height: 300px;
       width: 300px;
     }
 
-    div.two {
+    div#two {
       width: 50%;
     }
   </style>
@@ -37,21 +37,48 @@
   <script src="jquery-ratio-min.js"></script>
   <script>
     $(function(){
-      $('.one').ratio({
-        'side': 'width'
-      });
 
-      $('.two').ratio({
+      // Run with defaults
+      $('#one').ratio();
+
+
+      // Set custom ratio
+      $('#two').ratio({
         'ratio_height': 9,
         'ratio_width': 21,
-        'recalculate_on_resize': true,
         'side': 'width'
       });
 
-      $('.one').on('click', function(){
+
+      // On click, let's destroy the plugin behaviour
+      // This will reset the element to it's original dimensions
+      $('#one').on('click', function(){
+
+        // Get the plugin instance
         var ratio_instance = $(this).data('jquery_ratio');
 
-        ratio_instance.destroy();
+        // Destroy if instance exists
+        if ( ratio_instance ) {
+          ratio_instance.destroy();
+        }
+      });
+
+
+      // Recalculate on resize
+      $(window).on('resize.ratio', function() {
+        $('#two').each( function() {
+          var $this          = $(this),
+              ratio_instance = $this.data('jquery_ratio');
+
+          if ( ratio_instance ) {
+            ratio_instance.options.new_width = $(window).width() / 2
+            ratio_instance.set();
+
+          } else {
+            $this.ratio();
+
+          }
+        });
       });
 
     });
@@ -59,8 +86,8 @@
 </head>
 <body>
 
-  <div class="one">4:3 <br />(go back to original on click)</div>
-  <div class="two">21:9 <br />(recalculated on resize)</div>
+  <div id="one">4:3 <br />(go back to original on click)</div>
+  <div id="two">21:9 <br />(recalculated on resize)</div>
 
 </body>
 </html>
