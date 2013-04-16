@@ -3,10 +3,10 @@
  jquery-ratio
 
  Created at: 2013-04-15 14:58:45 +0200
- Updated at: 2013-04-16 11:09:03 +0200
+ Updated at: 2013-04-16 11:17:22 +0200
 
  Author: Yves Van Broekhoven
- Version: 0.0.1
+ Version: 0.0.2
 
  https://github.com/yvesvanbroekhoven/jquery-ratio
 

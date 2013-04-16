@@ -3,7 +3,7 @@
   "title": "jQuery ratio",
   "description": "Set the dimensions of a DOM element by ratio",
   "keywords": ["ratio"],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Yves Van Broekhoven",
     "url": "http://yvesvanbroekhoven.be"
